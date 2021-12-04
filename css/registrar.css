@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://www.10wallpaper.com/wallpaper/1366x768/1912/3D_Colorful_2019_Abstract_Art_Design_Poster_1366x768.jpg);
+  background-size: auto 860px;
+  height: 100vh;
+}
+#login .container #login-row #login-column #login-box {
+  margin-top: 30px;
+  max-width: 600px;
+  height: 650px;
+  border: 1px solid #9c9c9c;
+  background-color: #eaeaeab6;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login
+  .container
+  #login-row
+  #login-column
+  #login-box
+  #login-form
+  #register-link {
+  margin-top: -85px;
+}
+
