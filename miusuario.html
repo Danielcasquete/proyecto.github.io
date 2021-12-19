@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/MIusu.css" />
+    <link rel="icon" type="image/x-icon" href="logo/logo.png">
+    <!-- JavaScript Bundle with Popper -->
+    <script>
+    function salirweb(){
+        sessionStorage.removeItem("user");
+        location.href = "../login.html";
+    }
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/js/MIusu.js"></script>
+    <title>Acceso al Sistema</title>
+  
+<!-- barra de navegacion -->
+<nav class="navbar fixed-top nav-tabs navbar-expand-lg  navbar-dark ">
+    <div class="container-fluid">
+        <a class="navbar-brand mt-2 mt-lg-0 " href="../index.html">
+            <img src="logo/logo.png" height="60" alt="" loading="lazy" />
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a id="linktienda" class="nav-link text-white" href="../index.html">Tienda</a>
+                <li id="navusuarios" class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle" href="" id="navbarDropdown1"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Usuarios
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../REcoord.html">Crear Coordinador</a></li>
+                        <li><a class="dropdown-item" href="../REases.html">Crear Asesor</a></li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="../TAusuarios.html">Ver usuarios</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="navusuarios2" class="nav-item">
+                    <a class="nav-link text-white" href="../REproduc.html">Crear Producto</a>
+                </li>
+                <li id="navusuarios3" class="nav-item">
+                    <a class="nav-link text-white" href="../TAproductos.html">Productos</a>
+                </li>
+                <li id="navusuariosASE" class="nav-item">
+                    <a class="nav-link text-white" href="../Lordenes.html">Orden de pedido</a>
+                </li>
+                <li id="navusuariosASE2" class="nav-item">
+                    <a class="nav-link text-white" href="../Cordenes.html">Consultas</a>
+                </li>
+                <li id="navusuariosCOORD" class="nav-item">
+                    <a class="nav-link text-white" href="../APordenes.html">Ordenes Asesores</a>
+                </li>
+                <li id="navcumpleaños" class="nav-item">
+                    <a class="nav-link text-white" href="../Cumpleaños.html">Cumpleaños</a>
+                </li>
+        
+            </div>
+            <ul class="navbar-nav me-auto mb-lg-6">
+            <li class="nav-item dropdown">
+               
+                <a class="nav-link text-white text-center dropdown-toggle" href="#" id="navbarDropdown2"
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    
+                </a>
+                
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item active" href="../miusuario.html">Mi usuario</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                        <a class="dropdown-item" onclick="salirweb()">Salir</a>
+                    </li>
+                </ul>
+            </li>
+            </ul>
+    </div>
+</nav>
+
+
+
+  </head>
+<!-- cuerpo de la pagina -->
+<body>
+    <br /><br /><br /><br />
+    <div id="login">
+        <div class="container">
+            <div class=" text-center text-black text-uppercase shadow p-3 mb-5 fw-bold fs-2 bg-body rounded">Mi perfil</div>
+        </div>
+        <div class="container">
+            <div id="prow" class="row justify-content-center align-items-center">
+                <div id="login-column">
+                    <div id="table-box" class="col-md-12">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+   
+</body>
+</html>
